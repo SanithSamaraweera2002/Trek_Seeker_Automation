@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe('Create Trip', () => {
   beforeEach('Login with registered user', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
 
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithjithnuka+testprodreg@gmail.com');

@@ -3,7 +3,7 @@
 describe('User Login Test', () => {
   //wrong username and wrong password
   it('wrong username and wrong password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithtt@gmail.com');
     cy.get('[placeholder="Password"]').type('Test');
@@ -13,7 +13,7 @@ describe('User Login Test', () => {
   });
   //wrong username and empty password
   it('wrong username and empty password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithtt@gmail.com');
 
@@ -24,7 +24,7 @@ describe('User Login Test', () => {
 
   //wrong username and correct passsword
   it('wrong username and correct passsword scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithtt@gmail.com');
     cy.get('[placeholder="Password"]').type('Kyle@123');
@@ -34,7 +34,7 @@ describe('User Login Test', () => {
   });
   //correct username and wrong password
   it('correct username and wrong password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithjithnuka+testprodreg@gmail.com');
     cy.get('[placeholder="Password"]').type('Test');
@@ -44,7 +44,7 @@ describe('User Login Test', () => {
   });
   //correct username and empty password
   it('correct username and empty password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithjithnuka+testprodreg@gmail.com');
 
@@ -54,7 +54,7 @@ describe('User Login Test', () => {
   });
   //empty username and empty password
   it('empty username and empty password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
 
     cy.get('[class="ant-btn ant-btn-primary login-form-button"]').click();
@@ -64,7 +64,7 @@ describe('User Login Test', () => {
   });
   //empty username and wrong password
   it('empty username and wrong password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
 
     cy.get('[placeholder="Password"]').type('Test');
@@ -74,7 +74,7 @@ describe('User Login Test', () => {
   });
   //correct username and correct password
   it('correct username and correct password scenario', () => {
-    cy.visit('http://trek-seeker-front-end.s3-website.eu-north-1.amazonaws.com');
+    cy.visit('http://localhost:3000/');
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.get('[placeholder="Email"]').type('sanithjithnuka+testprodreg@gmail.com');
     cy.get('[placeholder="Password"]').type('Kyle@123');

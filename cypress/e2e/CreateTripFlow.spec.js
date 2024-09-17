@@ -5,7 +5,7 @@ describe('Create Trip Flow', () => {
 
     cy.get('[class="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"]').eq(3).click();
     cy.wait(2000);
-    cy.get('[placeholder="Email"]').type('sanithjithnuka+testnewauto4@gmail.com');
+    cy.get('[placeholder="Email"]').type('sanithsjs+newusertestauto@gmail.com');
     cy.wait(2000);
     cy.get('[placeholder="Password"]').type('Sanith@123');
 
